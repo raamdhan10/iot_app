@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Monitoring Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Weather Monitoring Dashboard</h1>
+        
+        <!-- Summary Section -->
+        <div class="summary-card">
+            <h2>Current Summary</h2>
+            <div class="summary-grid">
+                <div class="summary-item">
+                    <span class="label">Max Temperature</span>
+                    <span id="max-temp" class="value">-</span>
+                </div>
+                <div class="summary-item">
+                    <span class="label">Min Temperature</span>
+                    <span id="min-temp" class="value">-</span>
+                </div>
+                <div class="summary-item">
+                    <span class="label">Average Temperature</span>
+                    <span id="avg-temp" class="value">-</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Readings Section -->
+        <div id="readings-container" class="readings-grid">
+            <!-- Readings will be inserted here by JavaScript -->
+        </div>
+
+        <!-- Loading Indicator -->
+        <div id="loading" class="loading">Loading...</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
